@@ -3,17 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>THOG.SHOP — Extremely Serious Frog Commerce</title>
-<meta name="description" content="Official-ish THOG merch. Green candle plushie preorders. Fun, silly, frog.">
+<title>THOG.SHOP — Frog Commerce</title>
+<meta name="description" content="THOG merch. Preorder the Green Candle, Lil THOG plush, and stickers.">
 <link rel="icon" href="assets/icon.png">
 <style>
   :root{
-    --thog:#22c55e;        /* frog green */
-    --sky:#38bdf8;         /* site accent blue */
-    --ink:#0b0f14;         /* bg */
-    --card:#121822;
-    --text:#e8eef6;
-    --muted:#94a3b8;
+    --thog:#22c55e; --sky:#38bdf8; --ink:#0b0f14; --card:#121822; --text:#e8eef6; --muted:#94a3b8;
   }
   *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
   body{margin:0;background:radial-gradient(900px 600px at 10% -10%,#162235 0,#0b0f14 60%);color:var(--text)}
@@ -24,17 +19,15 @@
   .logo b{color:var(--thog)}
   .pill{margin-left:auto;border:1px solid #243142;border-radius:999px;padding:8px 12px;font-size:14px;color:var(--muted)}
   .hero{max-width:1100px;margin:24px auto 10px;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;padding:0 14px}
-  .hcard{background:linear-gradient(180deg,#111827, #0e1520);border:1px solid #223047;border-radius:18px;padding:22px}
+  .hcard{background:linear-gradient(180deg,#111827,#0e1520);border:1px solid #223047;border-radius:18px;padding:22px}
   h1{margin:0 0 10px;font-size:36px;line-height:1.1}
-  .spark{color:var(--sky)}
   .cta{display:flex;gap:10px;margin-top:14px}
   .btn{padding:12px 14px;border-radius:12px;border:1px solid #2a3b50;background:#0f1623;color:#fff;cursor:pointer}
   .btn.primary{background:linear-gradient(180deg,#1fe074,#16c85f);border-color:#16c85f;color:#08210f;font-weight:700}
   .grid{max-width:1100px;margin:12px auto;padding:0 14px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   @media (max-width:950px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
   .card{background:var(--card);border:1px solid #223047;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-  .card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#0b0f14}
-  .card .pad{padding:14px}
+  .pad{padding:14px}
   .price{font-weight:800}
   .note{color:var(--muted);font-size:13px}
   .buy{margin-top:10px;display:flex;gap:8px}
@@ -44,6 +37,10 @@
   .faq h3{margin:14px 0 6px}
   footer{border-top:1px solid #1f2b3b;color:#8aa0b8;font-size:12px;padding:18px 14px;text-align:center}
   .x{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a3b50;padding:8px 12px;border-radius:10px}
+  /* image placeholder block */
+  .art{background:#0c111a;display:grid;place-items:center;aspect-ratio:1/1;border-bottom:1px solid #223047}
+  .art svg{width:100%;height:100%}
+  .hero .art{aspect-ratio:16/12;border-radius:12px}
 </style>
 </head>
 <body>
@@ -58,28 +55,53 @@
 
 <section class="hero">
   <div class="hcard">
-    <h1>Extremely serious <span class="spark">frog commerce</span>.</h1>
-    <p>Merch that celebrates **Theory of Gravity**. Zero promises except fun vibes and pixel frog energy.</p>
+    <h1>Extremely serious <span style="color:#38bdf8">frog commerce.</span></h1>
     <div class="cta">
       <a href="#store" class="btn primary">Shop THOG</a>
-      <a class="btn" href="https://x.com/tttthhiiisss" target="_blank">DM @MetaMarc for collabs</a>
+      <a class="btn" href="https://x.com/ttthhhiiisss" target="_blank">DM @ttthhhiiisss</a>
     </div>
-    <p class="note">Psst: Green Candle Plushie ships when we hit <b>100 preorders</b>. Help manifest it. 🕯️🟩</p>
+    <p class="note" style="margin-top:10px">All items are <b>preorders</b>. Green Candle ships when we hit <b>100</b>.</p>
   </div>
   <div class="hcard" style="display:flex;align-items:center;justify-content:center">
-    <img src="assets/hero_thog.png" alt="THOG" style="max-width:100%;border-radius:12px">
+    <!-- HERO ART (replace with <img src="assets/hero_thog.png" alt="THOG"> when ready) -->
+    <div class="art" aria-label="THOG">
+      <svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop stop-color="#0b1220" offset="0"/>
+            <stop stop-color="#10243a" offset="1"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="900" fill="url(#g)"/>
+        <circle cx="320" cy="360" r="120" fill="#22c55e"/>
+        <circle cx="520" cy="360" r="120" fill="#22c55e"/>
+        <rect x="240" y="450" width="520" height="260" rx="80" fill="#22c55e"/>
+        <rect x="770" y="260" width="160" height="340" rx="28" fill="#16c85f"/>
+        <rect x="820" y="220" width="60" height="70" rx="12" fill="#fef08a"/>
+        <text x="260" y="820" font-size="120" font-weight="800" fill="#38bdf8" style="letter-spacing:4px">THOG</text>
+      </svg>
+    </div>
   </div>
 </section>
 
 <a id="store"></a>
 <section class="grid">
+
   <!-- Product 1 -->
   <article class="card">
-    <img src="assets/green_candle_plush.png" alt="Green Candle Plush">
+    <!-- Replace with: <img src="assets/green_candle_plush.png" alt="Green Candle Plush"> -->
+    <div class="art" aria-label="Green Candle Plush">
+      <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1000" height="1000" fill="#0e1826"/>
+        <rect x="360" y="220" width="280" height="500" rx="40" fill="#22c55e"/>
+        <rect x="430" y="160" width="140" height="90" rx="18" fill="#fef08a"/>
+        <rect x="300" y="730" width="400" height="120" rx="30" fill="#1f2937"/>
+        <text x="500" y="810" font-size="54" text-anchor="middle" fill="#cbd5e1">GREEN CANDLE</text>
+      </svg>
+    </div>
     <div class="pad">
       <h2>Green Candle Plushie <span class="badge">Preorder</span></h2>
-      <div class="price">$39</div>
-      <p class="note">Soft. Huggable. Bullish. Ships when we reach 100 orders (batch manufacturing).</p>
+      <div class="price">$117</div>
       <div class="buy">
         <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_PLUSH" target="_blank">Preorder</a>
         <a class="btn" href="#faq">Details</a>
@@ -89,55 +111,21 @@
 
   <!-- Product 2 -->
   <article class="card">
-    <img src="assets/thog_plush.png" alt="Lil THOG Plush">
-    <div class="pad">
-      <h2>Lil THOG Plush</h2>
-      <div class="price">$29</div>
-      <p class="note">Pocket-sized frog companion. For charts, naps, and hopium.</p>
-      <div class="buy">
-        <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_FROG" target="_blank">Buy</a>
-        <a class="btn" href="#faq">Details</a>
-      </div>
+    <!-- Replace with: <img src="assets/thog_plush.png" alt="Lil THOG Plush"> -->
+    <div class="art" aria-label="Lil THOG Plush">
+      <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1000" height="1000" fill="#0e1826"/>
+        <circle cx="360" cy="360" r="150" fill="#22c55e"/>
+        <circle cx="600" cy="360" r="150" fill="#22c55e"/>
+        <rect x="260" y="470" width="480" height="260" rx="80" fill="#22c55e"/>
+        <circle cx="420" cy="350" r="22" fill="#0b0f14"/><circle cx="540" cy="350" r="22" fill="#0b0f14"/>
+        <rect x="440" y="410" width="80" height="20" rx="10" fill="#0b0f14"/>
+        <text x="500" y="820" font-size="54" text-anchor="middle" fill="#cbd5e1">LIL THOG</text>
+      </svg>
     </div>
-  </article>
-
-  <!-- Product 3 -->
-  <article class="card">
-    <img src="assets/thog_stickers.png" alt="Sticker Pack">
     <div class="pad">
-      <h2>Sticker Pack (10)</h2>
-      <div class="price">$9</div>
-      <p class="note">Laptop, scooter, toaster—stick the frog on everything.</p>
+      <h2>Lil THOG Plush <span class="badge">Preorder</span></h2>
+      <div class="price">$87</div>
       <div class="buy">
-        <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_STICKERS" target="_blank">Buy</a>
-        <a class="btn" href="#faq">Details</a>
-      </div>
-    </div>
-  </article>
-</section>
-
-<a id="faq"></a>
-<section class="faq">
-  <h2>FAQ</h2>
-  <h3>Is this official?</h3>
-  <p class="note">It’s frog-blessed community merch. We love THOG and want more fun in the world.</p>
-
-  <h3>When does the plush ship?</h3>
-  <p class="note">Green Candle ships after <b>100 preorders</b> (so we can do custom manufacturing). If we don’t hit it in a reasonable time, we’ll refund.</p>
-
-  <h3>Where do you ship?</h3>
-  <p class="note">US to start; expanding if demand croaks loud enough.</p>
-
-  <h3>Refunds?</h3>
-  <p class="note">If something arrives cursed or broken, we’ll make it right. Preorders refundable if the batch doesn’t happen.</p>
-</section>
-
-<footer>
-  <div class="x">
-    <span>Questions? Ping</span>
-    <a href="https://x.com/tttthhiiisss" target="_blank">@MetaMarc</a>
-  </div>
-  <div style="margin-top:10px">Not financial advice. Just frogs and plush.</div>
-</footer>
-</body>
-</html>
+        <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_FROG" target="_blank">Preorder</a>
+        <a class="btn" hr
