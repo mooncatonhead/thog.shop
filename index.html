@@ -5,25 +5,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>THOG.SHOP — Extremely Serious Frog Commerce</title>
 <meta name="description" content="THOG merch. Preorder the Green Candle, Lil THOG plush, and more.">
-<link rel="icon" href="assets/hero_thog.png">
+<link rel="icon" href="assets/moon_thog_fixed.png">
 <style>
   :root{ --thog:#22c55e; --sky:#38bdf8; --ink:#0b0f14; --card:#121822; --text:#e8eef6; --muted:#94a3b8; }
   *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
   body{margin:0;background:radial-gradient(900px 600px at 10% -10%,#162235 0,#0b0f14 60%);color:var(--text)}
   a{color:inherit;text-decoration:none}
+
   header{position:sticky;top:0;background:rgba(11,15,20,.8);backdrop-filter:blur(8px);border-bottom:1px solid #1f2b3b;z-index:5}
   .nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:14px;padding:10px 14px}
   .logo{font-weight:800;letter-spacing:.5px}.logo b{color:var(--thog)}
   .pill{margin-left:auto;border:1px solid #243142;border-radius:999px;padding:8px 12px;font-size:14px;color:var(--muted)}
+
   .hero{max-width:1100px;margin:24px auto 10px;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;padding:0 14px}
-  .hcard{background:linear-gradient(180deg,#111827, #0e1520);border:1px solid #223047;border-radius:18px;padding:22px}
+  .hcard{background:linear-gradient(180deg,#111827,#0e1520);border:1px solid #223047;border-radius:18px;padding:22px}
   h1{margin:0 0 10px;font-size:36px;line-height:1.1}
   .spark{color:var(--sky)}
   .cta{display:flex;gap:10px;margin-top:14px}
   .btn{padding:12px 14px;border-radius:12px;border:1px solid #2a3b50;background:#0f1623;color:#fff;cursor:pointer}
   .btn.primary{background:linear-gradient(180deg,#1fe074,#16c85f);border-color:#16c85f;color:#08210f;font-weight:700}
+
+  /* image sizing fixes */
+  .imgwrap{height:360px;border-radius:12px;overflow:hidden}
+  .imgwrap img{width:100%;height:100%;object-fit:cover;display:block}
+  @media (min-width:1200px){ .imgwrap{height:420px} }
+  @media (max-width:950px){ .hero{grid-template-columns:1fr}.imgwrap{height:220px} }
+
   .grid{max-width:1100px;margin:12px auto;padding:0 14px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  @media (max-width:950px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  @media (max-width:950px){ .grid{grid-template-columns:1fr} }
   .card{background:var(--card);border:1px solid #223047;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
   .card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#0b0f14;display:block}
   .pad{padding:14px}
@@ -32,6 +41,7 @@
   .buy{margin-top:10px;display:flex;gap:8px}
   .buy a{flex:1;text-align:center}
   .badge{display:inline-block;background:#0f1b12;border:1px solid #205a33;color:#8dffb5;padding:4px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+
   .faq{max-width:1100px;margin:20px auto;padding:0 14px}
   .faq h3{margin:14px 0 6px}
   footer{border-top:1px solid #1f2b3b;color:#8aa0b8;font-size:12px;padding:18px 14px;text-align:center}
@@ -58,8 +68,12 @@
     </div>
     <p class="note">All items are <b>preorders</b>. Green Candle ships when we hit <b>100</b>.</p>
   </div>
-  <div class="hcard" style="display:flex;align-items:center;justify-content:center">
-    <img src="assets/hero_thog.png" alt="THOG hero" loading="eager">
+
+  <!-- HERO IMAGE (moon pic) -->
+  <div class="hcard">
+    <div class="imgwrap">
+      <img src="assets/moon_thog_fixed.png" alt="THOG on the moon with a friend">
+    </div>
   </div>
 </section>
 
@@ -67,7 +81,7 @@
 <section class="grid">
   <!-- Green Candle Plush -->
   <article class="card">
-    <img src="assets/green_candle_plush.png" alt="Green Candle Plush" loading="lazy">
+    <img src="assets/green_candle_plush.png" alt="Green Candle Plush">
     <div class="pad">
       <h2>Green Candle Plushie <span class="badge">Preorder</span></h2>
       <div class="price">$117</div>
@@ -81,7 +95,7 @@
 
   <!-- Lil THOG Plush -->
   <article class="card">
-    <img src="assets/thog_plush.png" alt="Lil THOG Plush" loading="lazy">
+    <img src="assets/thog_plush.png" alt="Lil THOG Plush">
     <div class="pad">
       <h2>Lil THOG Plush <span class="badge">Preorder</span></h2>
       <div class="price">$87</div>
@@ -93,9 +107,9 @@
     </div>
   </article>
 
-  <!-- Critter Plush -->
+  <!-- Duck Adventurer Plush -->
   <article class="card">
-    <img src="assets/critter_plush.png" alt="Duck Adventurer Plush" loading="lazy">
+    <img src="assets/critter_plush.png" alt="Duck Adventurer Plush">
     <div class="pad">
       <h2>Duck Adventurer Plush <span class="badge">Preorder</span></h2>
       <div class="price">$87</div>
@@ -109,7 +123,7 @@
 
   <!-- Stickers -->
   <article class="card">
-    <img src="assets/thog_stickers.png" alt="Sticker Pack" loading="lazy">
+    <img src="assets/thog_stickers.png" alt="Sticker Pack">
     <div class="pad">
       <h2>Sticker Pack (10) <span class="badge">Preorder</span></h2>
       <div class="price">$27</div>
