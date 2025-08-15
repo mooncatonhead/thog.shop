@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THOG.SHOP — Extremely Serious Frog Commerce</title>
+<meta name="description" content="Official-ish THOG merch. Green candle plushie preorders. Fun, silly, frog.">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root{
+    --thog:#22c55e;        /* frog green */
+    --sky:#38bdf8;         /* site accent blue */
+    --ink:#0b0f14;         /* bg */
+    --card:#121822;
+    --text:#e8eef6;
+    --muted:#94a3b8;
+  }
+  *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  body{margin:0;background:radial-gradient(900px 600px at 10% -10%,#162235 0,#0b0f14 60%);color:var(--text)}
+  a{color:inherit;text-decoration:none}
+  header{position:sticky;top:0;background:rgba(11,15,20,.8);backdrop-filter:blur(8px);border-bottom:1px solid #1f2b3b;z-index:5}
+  .nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:14px;padding:10px 14px}
+  .logo{font-weight:800;letter-spacing:.5px}
+  .logo b{color:var(--thog)}
+  .pill{margin-left:auto;border:1px solid #243142;border-radius:999px;padding:8px 12px;font-size:14px;color:var(--muted)}
+  .hero{max-width:1100px;margin:24px auto 10px;display:grid;grid-template-columns:1.2fr .8fr;gap:18px;padding:0 14px}
+  .hcard{background:linear-gradient(180deg,#111827, #0e1520);border:1px solid #223047;border-radius:18px;padding:22px}
+  h1{margin:0 0 10px;font-size:36px;line-height:1.1}
+  .spark{color:var(--sky)}
+  .cta{display:flex;gap:10px;margin-top:14px}
+  .btn{padding:12px 14px;border-radius:12px;border:1px solid #2a3b50;background:#0f1623;color:#fff;cursor:pointer}
+  .btn.primary{background:linear-gradient(180deg,#1fe074,#16c85f);border-color:#16c85f;color:#08210f;font-weight:700}
+  .grid{max-width:1100px;margin:12px auto;padding:0 14px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media (max-width:950px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid #223047;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+  .card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#0b0f14}
+  .card .pad{padding:14px}
+  .price{font-weight:800}
+  .note{color:var(--muted);font-size:13px}
+  .buy{margin-top:10px;display:flex;gap:8px}
+  .buy a{flex:1;text-align:center}
+  .badge{display:inline-block;background:#0f1b12;border:1px solid #205a33;color:#8dffb5;padding:4px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+  .faq{max-width:1100px;margin:20px auto;padding:0 14px}
+  .faq h3{margin:14px 0 6px}
+  footer{border-top:1px solid #1f2b3b;color:#8aa0b8;font-size:12px;padding:18px 14px;text-align:center}
+  .x{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a3b50;padding:8px 12px;border-radius:10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">THOG.<b>SHOP</b></div>
+    <a class="pill" href="#store">Store</a>
+    <a class="pill" href="#faq">FAQ</a>
+    <a class="pill" href="https://thog.xyz" target="_blank">thog.xyz</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hcard">
+    <h1>Extremely serious <span class="spark">frog commerce</span>.</h1>
+    <p>Merch that celebrates **Theory of Gravity**. Zero promises except fun vibes and pixel frog energy.</p>
+    <div class="cta">
+      <a href="#store" class="btn primary">Shop THOG</a>
+      <a class="btn" href="https://x.com/tttthhiiisss" target="_blank">DM @MetaMarc for collabs</a>
+    </div>
+    <p class="note">Psst: Green Candle Plushie ships when we hit <b>100 preorders</b>. Help manifest it. 🕯️🟩</p>
+  </div>
+  <div class="hcard" style="display:flex;align-items:center;justify-content:center">
+    <img src="assets/hero_thog.png" alt="THOG" style="max-width:100%;border-radius:12px">
+  </div>
+</section>
+
+<a id="store"></a>
+<section class="grid">
+  <!-- Product 1 -->
+  <article class="card">
+    <img src="assets/green_candle_plush.png" alt="Green Candle Plush">
+    <div class="pad">
+      <h2>Green Candle Plushie <span class="badge">Preorder</span></h2>
+      <div class="price">$39</div>
+      <p class="note">Soft. Huggable. Bullish. Ships when we reach 100 orders (batch manufacturing).</p>
+      <div class="buy">
+        <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_PLUSH" target="_blank">Preorder</a>
+        <a class="btn" href="#faq">Details</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 2 -->
+  <article class="card">
+    <img src="assets/thog_plush.png" alt="Lil THOG Plush">
+    <div class="pad">
+      <h2>Lil THOG Plush</h2>
+      <div class="price">$29</div>
+      <p class="note">Pocket-sized frog companion. For charts, naps, and hopium.</p>
+      <div class="buy">
+        <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_FROG" target="_blank">Buy</a>
+        <a class="btn" href="#faq">Details</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Product 3 -->
+  <article class="card">
+    <img src="assets/thog_stickers.png" alt="Sticker Pack">
+    <div class="pad">
+      <h2>Sticker Pack (10)</h2>
+      <div class="price">$9</div>
+      <p class="note">Laptop, scooter, toaster—stick the frog on everything.</p>
+      <div class="buy">
+        <a class="btn primary" href="REPLACE_WITH_STRIPE_LINK_STICKERS" target="_blank">Buy</a>
+        <a class="btn" href="#faq">Details</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<a id="faq"></a>
+<section class="faq">
+  <h2>FAQ</h2>
+  <h3>Is this official?</h3>
+  <p class="note">It’s frog-blessed community merch. We love THOG and want more fun in the world.</p>
+
+  <h3>When does the plush ship?</h3>
+  <p class="note">Green Candle ships after <b>100 preorders</b> (so we can do custom manufacturing). If we don’t hit it in a reasonable time, we’ll refund.</p>
+
+  <h3>Where do you ship?</h3>
+  <p class="note">US to start; expanding if demand croaks loud enough.</p>
+
+  <h3>Refunds?</h3>
+  <p class="note">If something arrives cursed or broken, we’ll make it right. Preorders refundable if the batch doesn’t happen.</p>
+</section>
+
+<footer>
+  <div class="x">
+    <span>Questions? Ping</span>
+    <a href="https://x.com/tttthhiiisss" target="_blank">@MetaMarc</a>
+  </div>
+  <div style="margin-top:10px">Not financial advice. Just frogs and plush.</div>
+</footer>
+</body>
+</html>
